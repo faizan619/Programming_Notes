@@ -1,28 +1,25 @@
 void main(){
-  //If ,else if and else condition in Dart
+  //If ,else if and else condition in Dart Programming Language
   var a1 = 13;
   var a2 = 10;
   var a3 = 5;
   //using if statement only ....
-  /*
   if(a1<a2){
     print("The value of $a1 is smaller than $a2");
   }
-  */
+ 
   
   //using if,else statement ....
-  /*
   if(a2<a1){
     print("The value of $a2 id smaller than $a1");
   }
   else{
     print("The value of $a2 id greater than $a1");
   }
-  */
+  
   
   
   //using if,else and else if statement ....
-  /*
   if(a1<a2){
     //If this condition fails then only it will move to else if statement 
     //otherwise it will stop here only
@@ -34,7 +31,7 @@ void main(){
   else{
     print("The value of $a1 is greater than $a2 and $a3");
   }
-  */
+  
   
   
   //ternary statement in Dart
