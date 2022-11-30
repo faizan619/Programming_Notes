@@ -52,6 +52,9 @@ void main(){
     case 6:
       print("value is 6");
       break;
+    default:
+      print("Please select between 4,5 and 6");
+      break;
   }
 
 }
