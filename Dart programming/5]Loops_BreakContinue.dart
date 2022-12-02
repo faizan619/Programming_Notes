@@ -40,4 +40,43 @@ void main(){
     print("range 5-10 :  $a1");
     a1++;
   }
+  
+    //break and continue statement in Dart
+  //break statement in Dart
+  var a2 = 1;
+  print("Not using break statement");
+  while(a2<=10){
+    print("value : $a2");
+    a2++;
+  }
+  a2 = 1;
+  print("using break statement");
+  while(a2<=10){
+    print("value : $a2");
+    if(a2==5){
+      print("The value 5 is trigger !Now time to break loop.. Byee");
+      //break statement is use to stop the execution of while loop 
+      //after certain conditon satisfied
+      break;
+    }
+    a2++;
+  }
+  print("After using break statement !let see the value of a2 = $a2");
+  print("");
+  var a3 = 10;
+  print("Not using break statement");
+  while(a3>=1){
+    print("value of a3 :  $a3");
+    a3--;
+  }
+  a3 = 10;
+  print("using break statement");
+  while(a3>=1){
+    print("value of  a3 : $a3");
+    if(a3==5){
+      print("Opps in reverse it trigger 5! time to break");
+      break;
+    }
+    a3--;
+  }
 }
