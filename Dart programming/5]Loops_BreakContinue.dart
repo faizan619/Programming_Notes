@@ -41,6 +41,40 @@ void main(){
     a1++;
   }
   
+      
+  //do while loop in Dart
+  int b = 1;
+  do{
+    //in this the loop will execute as a normal loop..
+    print("value of b : $b");
+    b++;
+  }while(b<=5);
+  
+  print(" ");
+  
+  int c = 10;
+  do{
+  //in this the condition is wrong so it will execute only one time..
+    print("value of c : $c");
+    c++;
+  }while(c<=7);
+
+  
+  //for in loop in Dart ..
+  //it is use to retrive values present in list or array format one by one
+  List friends = ["aneeza","giridhar","suja"];
+  for(String ele in friends){
+    print("my Friend : $ele");
+  }
+  
+  List number = [1,2,3,4,5,6,7];
+  print("List values : $number");
+  //printing value one by one
+  for(int i in number){
+    print(" values : $i");
+  }
+  
+  
     //break and continue statement in Dart
   //break statement in Dart
   var a2 = 1;
@@ -113,4 +147,5 @@ void main(){
     }
     print("even : $i");
   }
+  
 }
