@@ -79,4 +79,38 @@ void main(){
     }
     a3--;
   }
+  
+  //-continue statement in Dart...
+  
+  //-with continue statement..
+  for(int i=0;i<=10;i++){
+    //-continue statement will work in for loop only!I guess
+    if(i==5){
+      continue;
+    }
+    print("value is : $i");
+  }
+  
+  //-without continue statement..
+  for(int i=0;i<=10;i++){
+    print("value is : $i");
+  }
+  
+  //-printing no. from 1 to 10 skiping even number...
+  for(int i=0;i<=10;i++){
+    if(i%2==0){
+      //it will skip all the even value
+      continue;
+    }
+    print("odd : $i");
+  }
+  
+  //-printing no. from 1 to 10 skiping odd number...
+  for(int i=0;i<=10;i++){
+    if(i%2!=0){
+      //-it will skip all the odd value
+      continue;
+    }
+    print("even : $i");
+  }
 }
