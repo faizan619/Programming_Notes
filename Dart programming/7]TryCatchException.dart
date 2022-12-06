@@ -21,3 +21,82 @@ void main(){
   }
   
 }
+
+
+//custom exception in dart
+class CustomException implements Exception {
+  String cause;
+  CustomException(this.cause);
+}
+
+void main() {
+  try {
+    throwException();
+  } on CustomException {
+    print("custom exception has been obtained");
+  }
+}
+
+throwException() {
+  throw new CustomException('This is my first custom exception');
+}
+
+
+
+//using arrow function for exception
+class WithdrawException implements Exception{
+  String wdExpMsg()=> 'Oops! something went wrong';
+}
+/*
+void main() {   
+  
+   //below code is showing error try to figure out what is mistake and commit to improve code
+   try {   
+      withdrawAmt(400);
+   }   
+  on WithdrawException{
+    WithdrawException we=WithdrawException();
+    print(we.wdExpMsg());
+  }
+  finally{
+    print('Withdraw Amount<500 is not allowed');
+  }
+}
+
+void withdrawAmt(int amt) {   
+   if (amt <= 499) {   
+      throw WithdrawException();   
+   }else{
+     print('Collect Your Amount=$amt from ATM Machine...');
+   }   
+}    
+
+
+
+ * 
+ * //below code is showing error try to figure out what is mistake and commit to improve code
+void main(){
+  
+   //custom Exception in Dart
+  try{depositMoney(-500);}
+  catch(e){print(e.errorMessage());}
+  //error meggage is defined above but still it is saying it is not defined 😶
+   
+}
+
+
+//custom exception in dart
+class DepositException implements Exception{
+  String errorMessage(){
+    return "The amount can't be less than 0";
+  }
+}
+  void depositMoney(int money){
+    if(money < 0){
+      //Don't know why but the below line is showing error of unnecessary new keyword😥
+      throw new DepositException();
+    }
+    
+  }
+  */
+  
