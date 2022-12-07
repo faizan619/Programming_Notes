@@ -73,15 +73,14 @@ void withdrawAmt(int amt) {
 
 
 
- * 
- * //below code is showing error try to figure out what is mistake and commit to improve code
+  
+ //below code is showing error try to figure out what is mistake and commit to improve code
 void main(){
   
    //custom Exception in Dart
   try{depositMoney(-500);}
   catch(e){print(e.errorMessage());}
   //error meggage is defined above but still it is saying it is not defined 😶
-   
 }
 
 
