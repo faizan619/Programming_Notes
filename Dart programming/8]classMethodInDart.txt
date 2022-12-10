@@ -1,0 +1,16 @@
+void main(){
+  var firstClass = NewClass();
+  firstClass.detail();
+  var a1 = firstClass.roll;
+  print(a1);
+  var a2 = firstClass.name;
+  print(a2);
+  
+}
+class NewClass{
+  int roll = 26;
+  String name = "faizan";
+  void detail(){
+    print("The name of the admin is : $name and has roll no : $roll");
+  }
+}
