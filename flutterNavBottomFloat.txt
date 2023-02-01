@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+
+void main()=>runApp(
+  MaterialApp(
+    title:'Flutter Application',
+    debugShowCheckedModeBanner:false,
+    home:Scaffold(
+      appBar: AppBar(
+        title:Text('Flutter  Apk'),
+        backgroundColor:Colors.lime,
+      ),
+      floatingActionButton:FloatingActionButton(
+        child:Text('Click'),
+        onPressed:()=>{
+          print("Hello User"),
+        },
+        tooltip:'Click  this button',
+        backgroundColor:Colors.lime,
+      ),
+      bottomNavigationBar: BottomAppBar(
+        // child:Text('bottom bar'),
+        child:Container(
+          height:50.0,
+          child:Center(
+            child:Text('Faizan Navigation Bar'),
+          ),
+        ),
+      ),
+      backgroundColor:Colors.amberAccent,
+    ),
+  ),
+);
