@@ -1,0 +1,81 @@
+################################### network Model #####################################
+TCP/IP protocol
+OSi---> open system interconnection
+
+################################# Introduction to Physical Layer ##############################
+Analog and digital signal
+analog signal--> It is a signal in which the signal magnitude varies in a smooth fashion without  any break with respect 
+to time as shown
+digital signal--> it is a signal in which the signal magnitude has a constant level for some period of time,then it changes
+ suddenly to another constant level
+
+trnsmission impairments--> in comunication system the recived signal is never identical to transmitter one due to some 
+transmission impairment
+reason-->attenuation and attenuation distortion
+	|-->the strength of a signal decreae with increase in distance travelled over a medium	
+	delay distrotion-->problem persent in wired media
+	noise-->when data travelled over a transmission medium noice is added to it
+
+performance-The performance of data communication network can be measured with the help of following parameter
+1] bandwidth	2]Jitter	3]Delay	4]Throughput
+bandwidth-->it is used for measuring the network performance
+throughput-->it is used to know the speed  of data transmission over a network.
+	defined as the actual rate at which the info is sent over the channel.measured in but/second or frame/sec
+Jitter-->defined as the variation in delay for the packets belonging to the same flow
+delay--> is due to the time required for buffering,queueing switching and routing
+		
+
+############################### Analog and Digital Transmission ############################
+
+digital transmission
+info is sent from one point to other .we cannot sent info as it is.instead it has to be converted into either a digital signal
+or an analog signal for transmission
+use of digital signal for transmission has many advantages	
+
+*Analog to analog conversion*
+analog data such as voice,video etc into analog signal aka modulation
+		________
+analog data  ------>	|Modulator| ----->	modulated analog signal
+		---------------
+
+
+*Digital to Analog Conversion*
+digital data at input is converted into analog signal and are transmited over transmisison medium done by modems	
+eg--> transmitting digital data through the public telephone network
+
+*Analog to Digital conversion*
+conversion of analog data to digital signal aka digitisation
+it is essenial in all digital communication system like pulse code modulation or delta modulation
+to carry out this transformation it should follow a sequence of operation such as sampling,quantization and enconding
+
+*diigtal to digital conversion*
+the digital data which is normally binary in nature is converted into a sequence of discrete discontinous voltage pulses
+
+*line coding*
+it is defined as process of converting binary data ,a sequence of bits to a digital signal
+data such as text,number ,images and audio video are stored in computer memory in form of sequence
+line coding converts these sequence into digital signal
+
+
+main****
+			___________
+analog/digital data --- >   	|encoder	   |   ---> Digital signal
+			--------------------
+
+analog/digital data --> 	__________________    
+			| modulator	|	---> Analog signal
+			--------------------------------
+
+
+unipolar-- it use only one voltage level other than zero	.so engoder signal will have +A volts value or 0
+polat - it uses two voltage levels other than zero such as +A/2 and -A/2
+line codes----------------|				page 58
+		|----------->Unipolar---------------------->RZ
+		|		|---------------->NRZ  
+		|
+		|
+		|------------>Polar------------------------>RZ
+		|		|--------------->NRZ
+		|		|---------------->manchester
+		|
+		|-------------->Bipolar--------------------->AMI
